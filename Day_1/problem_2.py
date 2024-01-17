@@ -19,3 +19,19 @@ The lowest grade of 37.21 belongs to Tina. The second lowest grade of 37.21
 belongs to both Harry and Berry, so we order their names alphabetically and print each name on a new line.
 
 '''
+
+a=[]
+z=[]
+e=[]
+b=int(input("Enter number of student :"))
+for i in range(b):
+    a1=input("Enter name :")
+    b1=eval(input("Enter marks :"))
+    a.append([a1,b1])
+    z.append(b1)
+a.sort()
+z=list(set(z))
+z.remove(min(z))
+for j in a:
+    if j[1]==min(z):
+        print(j[0])
