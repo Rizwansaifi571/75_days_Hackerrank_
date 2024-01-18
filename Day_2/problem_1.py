@@ -27,7 +27,7 @@ query=input("enter query name :")
 a=student_marks.get(query)
 result1=sum(a)/len(a)           #sum(a) buildin function take all iterable sum
 result=result1
-print(f"{result:.2f}")
+print(f"{result:.2f}")      #2 decimal point.
 
 
 '''                   or                       '''
