@@ -19,3 +19,8 @@ weekday_index = calendar.weekday(date[2], date[0], date[1])
 weekday_name = calendar.day_name[weekday_index]
 print(weekday_index)
 print(weekday_name.upper())
+
+
+'''return whole calendar'''
+import calendar
+print (calendar.TextCalendar(firstweekday=6).formatyear(2015))
