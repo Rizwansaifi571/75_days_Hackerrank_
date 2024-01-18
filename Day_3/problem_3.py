@@ -24,3 +24,11 @@ You are given a string S.
 Your task is to print all possible size k replacement combinations of the string 
 in lexicographic sorted order.
 '''
+
+
+from itertools import combinations_with_replacement
+a1,b1=input('Enter :').split()
+b1=int(b1)
+a1=sorted(a1)
+for i in combinations_with_replacement(a1,b1):
+    print(''.join(i))
