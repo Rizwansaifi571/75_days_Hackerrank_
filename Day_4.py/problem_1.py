@@ -35,3 +35,11 @@ while i<n:
             lis1.reverse()
         elif op=='pop':
             lis1.pop()
+    
+    elif len(inp)==2:
+        op=inp[0]
+        val=int(inp[1])
+        if op=='append':
+            lis1.append(val)
+        elif op=='remove':
+            lis1.remove(val)
