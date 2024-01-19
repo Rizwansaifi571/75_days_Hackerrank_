@@ -16,3 +16,22 @@ of commands where each command will be of the 7 types listed above.
 Iterate through each command in order and perform the corresponding operation on your list.
 
 '''
+
+n=int(input('time :'))
+i=0
+lis1=[]
+while i<n:
+    i+=1
+    inp=input('Enter :').split()
+    if len(inp)==1:
+        op=inp[0]
+        if op=='sort':
+            lis1.sort()
+        elif op=='print':
+            print(lis1)
+        elif op=='append':
+            lis1.pop()
+        elif op=='reverse':
+            lis1.reverse()
+        elif op=='pop':
+            lis1.pop()
