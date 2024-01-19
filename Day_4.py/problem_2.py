@@ -16,3 +16,8 @@ the elements in tuple .
 '''
 
 
+
+n=int(input('Enter :'))
+ele=map(int,input('Enter :').split())
+t=tuple(ele)
+print(hash(t))
