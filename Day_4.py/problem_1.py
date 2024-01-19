@@ -43,3 +43,10 @@ while i<n:
             lis1.append(val)
         elif op=='remove':
             lis1.remove(val)
+    
+    elif len(inp)==3:
+        op=inp[0]
+        ind=int(inp[1])
+        val=int(inp[2])
+        if op=='insert':
+            lis1.insert(ind,val)
